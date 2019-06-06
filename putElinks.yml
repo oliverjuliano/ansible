@@ -1,0 +1,9 @@
+---
+- hosts: httpd
+  remote_user: julianoo
+  become: yes
+  tasks:
+    - name: install elinks
+      yum:
+        name: elinks
+        state: present
