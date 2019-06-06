@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: My first playbook!
+      debug:
+        msg: "{{ MESSAGE }}"

@@ -1,0 +1,12 @@
+---
+- hosts: testserver
+  tasks:
+    - name: get file
+      block:
+        - get_url:
+            url: "http://esdlpoc01/index.html"
+            dest: "/home/julianoo/tmp/index_file"
+      rescue:
+        - debug: msg="The file does not exist!"
+      always:
+        - debug: msg="Play is done"
