@@ -1,6 +1,10 @@
 ---
 - hosts: esdlpoc01.csmc.edu
   tasks:
+    - name: delete file if exists
+      file: 
+        path: /home/julianoo/tmp/testfile
+        state: absent
     - name: copy a file
       file: 
         path: /home/julianoo/tmp/testfile
