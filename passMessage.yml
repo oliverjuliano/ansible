@@ -1,6 +1,6 @@
 ---
-- hosts: esdlpoc01.csmc.edu
+- hosts: localhost
   tasks:
-    - name: My first playbook!
+    - name: concat two arguments passed as one-liner message
       debug:
-        msg: "{{ MESSAGE }}"
+        msg: "My name is {{ first }} {{ last }}"
