@@ -1,5 +1,5 @@
 ---
-- hosts: testserver
+- hosts: esdlpoc01.csmc.edu
   tasks:
     - name: copy a file
       file: 
@@ -10,4 +10,4 @@
     - name: edit file
       lineinfile:
         path: /home/julianoo/tmp/testfile
-        line: "{{output.uid}}"
+        line: "{{output}}"
