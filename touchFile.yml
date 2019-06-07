@@ -4,5 +4,5 @@
   tasks:
     - name: create a test file
       file:
-        path: "/home/julianoo/temp/testfile.txt"
+        path: "/home/julianoo/tmp/testfile.txt"
         state: touch
