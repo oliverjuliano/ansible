@@ -1,0 +1,8 @@
+---
+- hosts: esdlpoc01
+  remote_user: julianoo
+  tasks:
+    - name: create a test file
+      file:
+        path: "/home/julianoo/tmp/testfile.txt"
+        state: touch
